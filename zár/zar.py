@@ -27,3 +27,14 @@ for index,kod in enumerate(kodok,1):
         talalat.append(index)
     
 print("A nyitó kodszámok sorai"+" ".join(str(e) for e in talalat))
+
+print("4.feladat")
+
+dupla = []
+for index,kod in enumerate(kodok, 1):
+    for karakter in kod:
+        if kod.count(karakter) > 1:
+            dupla.append(index)
+
+if len(dupla)>0:
+    else print("nem volt+)
