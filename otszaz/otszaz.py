@@ -20,3 +20,35 @@ darab = int(input("Darabszám "))
 aruindex = kosar.index(arnev)
 darablista = kosar[:aruindex]
 print(darablista)
+vasarlasDb = darablista.count("F") + 1
+print(vasarlasDb)
+
+print("5.feladat")
+print("Az első vásárlás sorszáma: " + str(vasarlasDb))
+
+for i in range(0, len(kosar)):
+    if kosar[i*-1-1]==arnev:
+        utolsoindex=len(kosar)-i
+        break
+darablista=kosar[:utolsoindex]
+vasarlasDb=darablista.count("F") + 1
+print("Az utolsó vásárlás sorszáma: " + str(vasarlasDb))
+
+voltF=False
+szam = 0
+for e in kosar:
+    if e = arnev
+
+
+
+
+
+
+
+
+
+
+
+
+
+
