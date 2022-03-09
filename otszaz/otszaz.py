@@ -1,6 +1,6 @@
 #megszámolás de a több is egynek számít
 def ertek(darab):
-    if == darab:
+    if darab == 1:
         return 500
         
 f = open("penztar.txt")
@@ -42,7 +42,7 @@ print("Az utolsó vásárlás sorszáma: " + str(vasarlasDb))
 voltF=False
 szam = 0
 for e in kosar:
-    if e = arnev:
+    if e == arnev:
         if not voltF:
             szam=szam+1
             voltF=True
@@ -51,8 +51,36 @@ for e in kosar:
 print(str(szam) + "vásárlás során vettek belöle.")
             
         
-print(str(vasarlasDb)) + "darab vételkor fizetendő: " str(ertek(ertek(vasarlasDb))
+print(str(vasarlasDb)) + "darab vételkor fizetendő: " + str(ertek(ertek(vasarlasDb)))
 
 darabF=0
-for i in range(0:len(kosar):
+elozoindex=0
+keresettindex=0
+for i in range(0,len(kosar)):
+    if kosar[i]=="F":
+        darabF+=1
+    if darabF==sorszam:
+        elozoindex=keresetindex
+        keresetindex=1
+        break
+print(kosar[elozoindex:keresettindex])
+darabKosar=kosar[elozoindex:keresettindex]
+stat={}
+for e in darabKosar:
+    if e in stat.keys():
+        stat[e]+=1
+    else:
+        stat[e]=1
+
+
+
+
+
+
+
+
+
+
+
+
 
