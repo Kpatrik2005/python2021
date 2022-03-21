@@ -1,17 +1,9 @@
-<<<<<<< HEAD
 def ertek(darab):
     if darab == 1:
         return 500
     else:
         return darab * 400 + 150
 
-=======
-#megszámolás de a több is egynek számít
-def ertek(darab):
-    if darab == 1:
-        return 500
-        
->>>>>>> fb895628f84ab74e210a9053f0b7e1eab6f6582f
 f = open("penztar.txt")
 
 kosar = []
@@ -93,74 +85,8 @@ for e in darabKosar:
 
 print(stat)
 
-
-
-
-
-<<<<<<< HEAD
-=======
-aruindex = kosar.index(arnev)
-darablista = kosar[:aruindex]
-print(darablista)
-vasarlasDb = darablista.count("F") + 1
-print(vasarlasDb)
-
-print("5.feladat")
-print("Az első vásárlás sorszáma: " + str(vasarlasDb))
-
-for i in range(0, len(kosar)):
-    if kosar[i*-1-1]==arnev:
-        utolsoindex=len(kosar)-i
-        break
-darablista=kosar[:utolsoindex]
-vasarlasDb=darablista.count("F") + 1
-print("Az utolsó vásárlás sorszáma: " + str(vasarlasDb))
-
-
-voltF=False
-szam = 0
 for e in kosar:
-    if e == arnev:
-        if not voltF:
-            szam=szam+1
-            voltF=True
-        if e == "F":
-            voltF=False
-print(str(szam) + "vásárlás során vettek belöle.")
-            
-        
-print(str(vasarlasDb)) + "darab vételkor fizetendő: " + str(ertek(ertek(vasarlasDb)))
-
-darabF=0
-elozoindex=0
-keresettindex=0
-for i in range(0,len(kosar)):
-    if kosar[i]=="F":
-        darabF+=1
-    if darabF==sorszam:
-        elozoindex=keresetindex
-        keresetindex=1
-        break
-print(kosar[elozoindex:keresettindex])
-darabKosar=kosar[elozoindex:keresettindex]
-stat={}
-for e in darabKosar:
-    if e in stat.keys():
-        stat[e]+=1
-    else:
-        stat[e]=1
-print(stat)
-
-
-
-
-
-
-
-
-
-
-
-
-
+if e=stat.keys()
+stat = {}
+for i  in value
 
