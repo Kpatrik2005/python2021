@@ -83,10 +83,42 @@ for e in darabKosar:
     else:
         stat[e] = 1
 
-print(stat)
 
-for e in kosar:
-if e=stat.keys()
 stat = {}
-for i  in value
+ossz = {}
+for e in kosar:
+    if e =="F":
+        osszag=0
+        for i in stat.values():
+            osszeg+=ertek(i)
+            ossz.append(osszeg)
+            stat = {}
 
+        else:
+            if e in stat.keys():
+                stat[e]+=1
+            else:
+                 stat[e]=1
+
+f=open("osszeg.txt","w")
+for i in range(0,len(ossz)):
+    f.write(str(i+1)+": "+str(ossz[i])+"\n")
+
+f.close()
+
+
+f=open("osszeg.txt","w")
+for i, e in enumerate(ossz):
+    
+f.close()
+
+
+
+
+
+
+
+
+
+
+    
