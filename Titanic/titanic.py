@@ -33,7 +33,9 @@ for e in adatok:
     temp=e.split(";")
     temp[1]=int(temp[1])
     temp[2]=int(temp[2])
-talalat=([e for e in adatok if e.find(kulcsszo)>=-1])
+    adatok2.append(temp)
+#print(adatok2)
+talalat=[e for e in adatok2 if e[0].find(kulcsszo)>=-1]
 print(talalat)
 if len(talalat)>0:
     print("Van találat!")
@@ -41,6 +43,22 @@ else:
     print("Nincs találat!")
 
 print("5.feladat")
+for e in talalat:
+    print("\t" + e[0] + " " + str(e[1] + e[2]) + " fő")
+print("\n".join(["\t" + e[0] + " " + str(e[1] + e[2]) + " fő" for e in talalat]))
+
+arany=[]
+for e in adatok2:
+    if e[2](e[1]+e[2])>0.6:
+        arany.append(e[0])
+        for e in arany:
+            print(e)
+
+
+
+
+
+
 
 
 
