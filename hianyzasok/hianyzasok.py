@@ -1,7 +1,12 @@
-#beolvasás szerkezet honap na náv
-#lekérdezük a lista méretét
-#a megfelelo napok vizsgálata adot oraszámban az x-ek és i-k vizsgálata
-#list a hiányzásokról
+#1. feladat:
 f = open("naplo.txt")
+adatok = f.read().split("\n")
+f.close()
 
-f.close
+naplo = []
+honap = 0
+nap = 0
+for e in adatok:
+    if e[0] == "#":
+
+        
