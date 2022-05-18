@@ -1,23 +1,42 @@
-print("1.feladat")
-filenev = "nehez.txt" #input("adja meg a file nevet")
-sor = 1 #int(input("Adja meg a sorszámot"))
-oszlop= 1 #int(input("adja meg az oszlop számát"))
+print("1. feladat:")
+#filenev = input("Adja meg a bemeneti fájl nevét! ")
+#sor = int(input("Adja meg egy sor számát! "))
+#oszlop = int(input("Adja meg egy oszlop számát! "))
+filenev = "nehez.txt"
+sor = 1
+oszlop = 1
 
 f = open(filenev)
-sorok=f.read().split("\n")[:-1]
+sorok = f.read().split("\n")[:-1]
 f.close()
 
-adatok=[]
-for sor in sorok:
-    adatok.append(sor.split(" "))
+adatok = []
+for _sor in sorok:
+    adatok.append(_sor.split(" "))
 
 adatok2 = []
-for sor in adatok:
-    temp=[]
-    for elem in sor:
+for _sor in adatok:
+    temp = []
+    for elem in _sor:
         temp.append(int(elem))
-tabla=adatok[:9]
-lepesek=adatok[9:]
-print(tabla)
-print(lepesek)
 
+    adatok2.append(temp)
+
+#print(adatok)
+#print(adatok2)
+
+tabla = adatok[:9]
+lepesek = adatok[9:]
+#print(tabla)
+#print(lepesek)
+
+print("3. feladat:")
+
+if tabla(sor-1)(oszlop-1)==0:
+    print("Az adott helyen szereplő szám: " + str(tabla[sor-1][oszlop-1]))
+else:
+    print("Az adott helyen szereplő szám: " + str(tabla[sor-1][oszlop-1]))
+
+s=math.ceil(sor/3)-1
+o=math.ceil(oszlop/3)
+tabla=s*3+o
